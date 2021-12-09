@@ -1,0 +1,23 @@
+n = int(input())
+
+correct = 0
+
+student_answer = ''
+correct_answer = ''
+
+for i in range(n):
+    student_answer=student_answer+input().upper()
+    
+for i in range(n):
+    correct_answer = correct_answer +input().upper()
+
+for i in range (n):
+    if student_answer[i] == correct_answer[i]:
+        correct +=1
+
+print()
+
+if correct <= 1:
+    print (correct,'correct answer')
+else:
+    print(correct, 'correct answers')
